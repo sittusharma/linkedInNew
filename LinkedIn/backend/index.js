@@ -19,7 +19,7 @@ const server = http.createServer(app)
 // ✅ Socket.IO CORS (FIXED)
 export const io = new Server(server, {
   cors: {
-    origin: "https://linkedin-frontend-6rdi.onrender.com",
+    origin: "https://linkedinnew-frontend.onrender.com",
     credentials: true
   }
 })
@@ -30,7 +30,7 @@ app.use(cookieParser())
 
 // ✅ Express CORS (FINAL SAFE)
 app.use(cors({
-  origin: "https://linkedin-frontend-6rdi.onrender.com",
+  origin: "https://linkedinnew-frontend.onrender.com",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
